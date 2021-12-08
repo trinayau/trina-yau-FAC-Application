@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Forum", cursive;
 }
 section {
   height: 500px;
@@ -8,11 +9,78 @@ section {
 }
 
 .hero {
-  background-color: #1c1d25;
+  background-color: #f4f0e8;
   height: 100vh;
+  color: #12255f;
+  font-size: 40px;
 }
 
 footer {
   height: 500px;
   background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 90px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.hero-area {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.button {
+  width: 200px;
+  height: 55px;
+  background-color: #efd56c;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.button:hover {
+  background-color: #ffcf7b;
+}
+
+.button:active {
+  background-color: #ffa376;
+  color: #828282;
+}
+
+.socials {
+  padding-bottom: 200px;
 }
