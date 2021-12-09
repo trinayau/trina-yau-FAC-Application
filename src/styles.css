@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-
 body {
   margin: 0;
-  font-family: "Lora", serif;
+  font-family: Poppins, sans-serif;
 }
 section {
   background-color: white;
@@ -97,7 +95,7 @@ p {
   padding-top: 15px;
   margin-top: 20px;
   font-weight: 300;
-  font-family: "Work Sans", sans-serif;
+  font-family: Poppin, sans-serif;
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -135,10 +133,10 @@ p {
 .sub-section {
   display: flex;
   justify-content: space-around;
-  margin-left: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
 }
 
 .headshot {
@@ -179,7 +177,7 @@ p {
 
 .information p,
 .journey p .subsection-fac p {
-  font-family: "Lora", serif;
+  font-family: Poppins, sans-serif;
   font-size: 20px;
   max-width: 70%;
 }
@@ -340,29 +338,15 @@ hr {
 
 .gradient-text {
   display: block;
-  font-family: "DM Serif Display", serif;
+  font-family: Poppins, sans-serif;
   font-size: 60px;
-  font-weight: lighter;
+  font-weight: 700;
   padding: 20px auto;
   text-align: center;
   margin: 20px auto;
   line-height: normal;
-  -webkit-background-image: linear-gradient(
-    to right,
-    #5335cf 20%,
-    #de005e 16.6%,
-    #f66e48 25%,
-    #de005e 20%,
-    #5335cf 100%
-  );
-  background-image: linear-gradient(
-    135deg,
-    #5335cf 20%,
-    #de005e 35%,
-    #f66e48 65%,
-    #de005e 45%,
-    #5335cf 80%
-  );
+  -webkit-background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
@@ -380,15 +364,15 @@ hr {
 
 #quizHeader {
   text-align: center;
-  font-family: "DM serif display", serif;
-  font-weight: 50;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
   display: block !important;
   font-size: 30px;
 }
 
 #quizButton {
   font-family: monospace;
-  background-color: #ef744b;
+  background-color: #12255f;
   color: white;
   padding: 20px;
   font-size: 16px;
@@ -402,7 +386,7 @@ hr {
   transition: background-color 0.2s ease-in-out 0s;
 }
 #quizButton:hover {
-  background-color: #ffc14c;
+  background-color: #ef744b;
   color: black;
 }
 .quiz-container p {
