@@ -73,6 +73,7 @@ p {
   margin: 0;
   font-size: 20px;
   font-weight: 300;
+  max-width: 100%;
 }
 
 .hero-area {
@@ -134,10 +135,10 @@ p {
 .sub-section {
   display: flex;
   justify-content: space-around;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .headshot {
@@ -150,11 +151,37 @@ p {
   margin-left: 80px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .socials {
+    margin: 0;
+    padding: 0;
+  }
+  .headshot-container {
+    margin-left: 0px;
+    display: block !important;
+  }
+  .lol {
+    display: block;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .sub-section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .information p {
+    max-width: 100% !important;
+    margin: 20px;
+  }
+}
+
 .information p,
 .journey p .subsection-fac p {
   font-family: "Lora", serif;
   font-size: 20px;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .lol {
@@ -185,6 +212,10 @@ p {
   display: flex;
   justify-content: center;
   color: #12255f;
+}
+
+.journey h2 {
+  justify-content: left;
 }
 
 .subsection-fac {
@@ -228,7 +259,7 @@ hr {
 
 .project-text {
   font-family: "Poppins", sans-serif;
-  max-width: 80%;
+  text-align: center;
 }
 .project-text a {
   color: #12255f;
@@ -269,14 +300,19 @@ hr {
   }
 
   ul.show {
-    display: inline;
-    color: #f4f0e8;
+    display: block;
+    width: 100px;
   }
 
   nav {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     background-color: #203e9a;
+  }
+
+  nav a {
+    color: #f4f0e8;
+    display: flex;
   }
 
   .logo {
@@ -335,7 +371,7 @@ hr {
 }
 
 #breedText {
-  padding: 1px 200px;
+  padding: 1px 20px;
   color: black;
   line-height: 25px;
   font-size: 25px;
@@ -368,4 +404,11 @@ hr {
 #quizButton:hover {
   background-color: #ffc14c;
   color: black;
+}
+.quiz-container p {
+  max-width: 100% !important;
+  margin: 0;
+}
+footer p {
+  max-width: 100% !important;
 }
