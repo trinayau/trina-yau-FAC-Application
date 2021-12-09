@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
 body {
   margin: 0;
-  font-family: "Forum", cursive;
+  font-family: "Lora", serif;
 }
 section {
   background-color: white;
@@ -14,8 +16,9 @@ section {
 }
 
 footer {
-  height: 500px;
-  background-color: black;
+  padding: 80px;
+  background-color: #f4f0e8;
+  text-align: center;
 }
 
 nav {
@@ -36,7 +39,12 @@ li {
   text-decoration: none;
 }
 
-li:hover {
+a {
+  text-decoration: none;
+  color: #12255f;
+}
+
+a:hover {
   color: #fe9b7c;
 }
 
@@ -65,7 +73,6 @@ p {
   margin: 0;
   font-size: 20px;
   font-weight: 300;
-  font-family: "Work Sans", sans-serif;
 }
 
 .hero-area {
@@ -91,6 +98,7 @@ p {
   font-weight: 300;
   font-family: "Work Sans", sans-serif;
   font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .button:hover {
@@ -104,10 +112,10 @@ p {
 
 .socials {
   padding-bottom: 200px;
-  margin: 20px;
-  font-size: 60px;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .socials a {
@@ -126,7 +134,10 @@ p {
 .sub-section {
   display: flex;
   justify-content: space-around;
-  padding: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .headshot {
@@ -140,7 +151,7 @@ p {
 }
 
 .information p,
-.journey p {
+.journey p .subsection-fac p {
   font-family: "Lora", serif;
   font-size: 20px;
   max-width: 80%;
@@ -150,9 +161,15 @@ p {
   display: flex;
 }
 
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .project-card {
   width: 350px;
-  height: 400px;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin: 10px;
   text-align: center;
@@ -170,8 +187,25 @@ p {
   color: #12255f;
 }
 
+.subsection-fac {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px auto;
+}
+
+.fac-h2 {
+  display: flex;
+  justify-content: left;
+}
+
 .subsection-alt {
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px auto;
 }
 
 .subtext {
@@ -190,4 +224,148 @@ p {
 hr {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.project-text {
+  font-family: "Poppins", sans-serif;
+  max-width: 80%;
+}
+.project-text a {
+  color: #12255f;
+  font-weight: bold;
+}
+
+.project-text a:hover {
+  color: #ef744b;
+  font-weight: bold;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #ef744b;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    background-color: #203e9a;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: inline;
+    color: #f4f0e8;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #203e9a;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+#dogHug {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  border: solid 1px white;
+  background: transparent url("images/pinkhug.jpg") center top no-repeat;
+  text-align: center;
+  background-size: 100%;
+  position: relative;
+  transition: background-image 0.2s ease-out 0s;
+}
+#dogHug:hover {
+  background-image: url("images/happygolden.gif");
+  background-size: 135%;
+}
+
+.gradient-text {
+  display: block;
+  font-family: "DM Serif Display", serif;
+  font-size: 60px;
+  font-weight: lighter;
+  padding: 20px auto;
+  text-align: center;
+  margin: 20px auto;
+  line-height: normal;
+  -webkit-background-image: linear-gradient(
+    to right,
+    #5335cf 20%,
+    #de005e 16.6%,
+    #f66e48 25%,
+    #de005e 20%,
+    #5335cf 100%
+  );
+  background-image: linear-gradient(
+    135deg,
+    #5335cf 20%,
+    #de005e 35%,
+    #f66e48 65%,
+    #de005e 45%,
+    #5335cf 80%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+}
+
+#breedText {
+  padding: 1px 200px;
+  color: black;
+  line-height: 25px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#quizHeader {
+  text-align: center;
+  font-family: "DM serif display", serif;
+  font-weight: 50;
+  display: block !important;
+  font-size: 30px;
+}
+
+#quizButton {
+  font-family: monospace;
+  background-color: #ef744b;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  box-shadow: 2px 10px 20px rgba(153, 153, 153, 0.2);
+
+  transition: background-color 0.2s ease-in-out 0s;
+}
+#quizButton:hover {
+  background-color: #ffc14c;
+  color: black;
 }
