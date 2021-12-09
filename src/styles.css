@@ -398,3 +398,11 @@ hr {
 footer p {
   max-width: 100% !important;
 }
+
+.credit {
+  font-size: 1rem;
+  text-align: center;
+  color: #203e9a;
+  margin-top: 30px;
+  font-family: monospace;
+}
