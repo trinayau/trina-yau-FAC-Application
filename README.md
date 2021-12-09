@@ -15,12 +15,8 @@ I tend to write a lot, so this is almost a personal diary. Feel free to skip to 
 
 ## 📚 Table of Contents
 
-[📅 Application Timeline](#-application-timeline)
-[✍️ Requirements](#-requirements)
-[🎨 Design]
-[🔎 Compatibility]
-[🎓 Learning]
-[🔮 Reflections and Future Moves]
+[📅 Application Timeline](#-application-timeline)<br />
+[✍️ Requirements](#%EF%B8%8F#-requirements)
 
 ## 📅 Application Timeline
 
