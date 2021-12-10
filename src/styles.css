@@ -6,6 +6,9 @@ body {
 html,
 body {
   overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -17,6 +20,7 @@ section {
   height: 100vh;
   color: #12255f;
   font-size: 40px;
+  width: 100vw;
 }
 
 footer {
@@ -525,7 +529,6 @@ footer p {
 
 .carousel {
   margin: 0;
-  padding: 20px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -671,16 +674,11 @@ footer p {
   .slides,
   .slide img,
   .navigation-manual,
-  .navigation-auto {
-    width: 370px;
-  }
+  .navigation-auto,
   .slide {
-    width: 100%;
+    max-width: 370px;
   }
 
-  .slide img {
-    object-fit: cover;
-  }
   #radio2:checked ~ .first {
     margin-left: -100%;
   }
