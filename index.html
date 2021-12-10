@@ -221,7 +221,56 @@
        Life in a big city can often make you feel so small. Why not cuddle up in the winter months with a sleepy older dog? Take a look at a few lesser-known dog breeds who are surprisingly adaptable to apartment living. What you find may surprise you!
       </p>
       <br />
-      <br/>
+      <div class="form-container">
+        <form id="quizForm">
+          <label for="name"> What's your name? </label>
+          <input
+            type="text"
+            autofocus="on"
+            autocomplete="off"
+            id="nameInput"
+            placeholder="Type your name here"
+            required
+          /><br />
+          <label for="activity" class="question"> Do you like active dogs? </label>
+         <label for="yesActivity" class="radioStyle"> <input
+            type="radio"
+            id="yesActivity"
+            name="active"
+            checked="checked"
+            class="inputStyle"
+          /><span>Yes, I love active dogs!</span></label>
+         <label
+            for="noActivity" class="radioStyle"
+            > <input type="radio" id="noActivity" name="active" class="inputStyle"/><span>No, I want a sweet couch potato!</span></label
+          ><br />
+          <label for="allergy" class="question"> Are you allergic to dogs? </label>
+          <label for="isAllergic"  class="radioStyle"><input
+            type="radio"
+            id="isAllergic"
+            name="allergy"
+            checked="checked"
+            class="inputStyle"
+          /><span>Yes, I am allergic to dogs 😥</span></label>
+         <label
+            for="notAllergic"  class="radioStyle"
+            > <input type="radio" id="notAllergic" name="allergy" class="inputStyle"/><span>No, give me your fluffiest one!</span> </label
+          ><br />
+          <label for="experience" class="question"> Have you had a dog before? </label>
+         <label for="experienced" class="radioStyle"> <input
+            type="radio"
+            id="experienced"
+            name="experience"
+            checked="checked"
+            class="inputStyle"
+          /><span>Yes, I am a dog whisperer</span></label>
+         <label
+            for="inexperiences"  class="radioStyle"
+            > <input type="radio" id="inexperiences" name="experience" class="inputStyle"/><span>No, this is my first dog </span></label
+          >
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
       <button id="quizButton"><em>Find Your New Friend ❤</em></button>
       <br />
     </div>
