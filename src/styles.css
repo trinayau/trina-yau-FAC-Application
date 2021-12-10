@@ -665,3 +665,31 @@ footer p {
     margin-left: -300%;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .slider,
+  .slides,
+  .slide img,
+  .navigation-manual,
+  .navigation-auto {
+    width: 370px;
+  }
+  .slide {
+    width: 100%;
+  }
+
+  .slide img {
+    object-fit: cover;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -100%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -200%;
+  }
+
+  #radio4:checked ~ .first {
+    margin-left: -300%;
+  }
+}
