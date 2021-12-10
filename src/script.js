@@ -1,12 +1,3 @@
-let hamburgerButton = document.getElementById("hamburger");
-let navList = document.getElementById("nav-list");
-
-function toggleButton() {
-  navList.classList.toggle("show");
-}
-
-hamburgerButton.addEventListener("click", toggleButton);
-
 let counter = 1;
 setInterval(function () {
   document.getElementById("radio" + counter).checked = true;
@@ -99,3 +90,12 @@ function handleForm(event) {
 form.addEventListener("submit", handleForm);
 
 button.addEventListener("click", toggleButton);
+
+let hamburgerButton = document.getElementById("hamburger");
+let navList = document.getElementById("nav-list");
+
+function toggleButton() {
+  navList.classList.toggle("show");
+}
+
+hamburgerButton.addEventListener("click", toggleButton);

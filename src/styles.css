@@ -2,6 +2,12 @@ body {
   margin: 0;
   font-family: Poppins, sans-serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 section {
   background-color: white;
 }
@@ -28,7 +34,7 @@ nav {
 ul {
   display: flex;
   list-style-type: none;
-  width: 500px;
+  width: 450px;
   justify-content: space-around;
   font-size: 20px;
 }
@@ -139,6 +145,7 @@ p {
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .headshot {
@@ -174,6 +181,10 @@ p {
   .information p {
     max-width: 100% !important;
     margin: 20px;
+  }
+
+  section {
+    max-width: 100%;
   }
 }
 
@@ -633,9 +644,8 @@ footer p {
   .slide img,
   .navigation-manual,
   .navigation-auto {
-    width: 490px;
+    width: 450px;
   }
-
   .slide {
     width: 100%;
   }
