@@ -7,6 +7,15 @@ function toggleButton() {
 
 hamburgerButton.addEventListener("click", toggleButton);
 
+let counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 3000);
+
 let bestie = document.getElementById("bestFriend");
 let button = document.getElementById("quizButton");
 let form = document.getElementById("quizForm");

@@ -494,7 +494,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #203e9a;
-  box-shadow: 0px 4px 12px; rgba(46, 86, 229, 0.4);
+  box-shadow: 0px 4px 12px rgba(46, 86, 229, 0.4);
   color: #fff;
   transform: translateY(3px);
 }
@@ -509,4 +509,149 @@ footer p {
   color: #203e9a;
   margin-top: 30px;
   font-family: monospace;
+}
+/* carousel css*/
+
+.carousel {
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f0e8;
+}
+
+.slider {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 800px;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* css for manual slide navigation*/
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #f4f0e8;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #f4f0e8;
+}
+
+#radio1:checked ~ .first-slide {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*CSS for automatic navigation*/
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 460px;
+  width: 800px;
+}
+
+.navigation-auto div {
+  border: 2px solid #f4f0e8;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+/* The :not() selector excludes the element passed to it from selection. The :last-child selector selects the last child. Combining these two above selector to excludes the last children (inner-div) of the parent div from the selection.*/
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #f4f0e8;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #f4f0e8;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #f4f0e8;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #f4f0e8;
+}
+/*Making carousel responsive*/
+@media only screen and (max-width: 1000px) {
+  .slider,
+  .slides,
+  .slide img,
+  .navigation-manual,
+  .navigation-auto {
+    width: 490px;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .slide img {
+    object-fit: cover;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -100%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -200%;
+  }
+
+  #radio4:checked ~ .first {
+    margin-left: -300%;
+  }
 }
