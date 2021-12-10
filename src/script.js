@@ -1,3 +1,4 @@
+//Carousel JS
 let counter = 1;
 setInterval(function () {
   document.getElementById("radio" + counter).checked = true;
@@ -6,6 +7,16 @@ setInterval(function () {
     counter = 1;
   }
 }, 3000);
+
+//Quiz feature
+let hamburgerButton = document.getElementById("hamburger");
+let navList = document.getElementById("nav-list");
+
+function toggleButton() {
+  navList.classList.toggle("show");
+}
+
+hamburgerButton.addEventListener("click", toggleButton);
 
 let bestie = document.getElementById("bestFriend");
 let button = document.getElementById("quizButton");
@@ -76,7 +87,7 @@ function quiz() {
   }
 }
 
-function toggleButton() {
+function toggleClass() {
   form.classList.toggle("show");
   button.classList.toggle("hide");
 }
@@ -89,13 +100,4 @@ function handleForm(event) {
 }
 form.addEventListener("submit", handleForm);
 
-button.addEventListener("click", toggleButton);
-
-let hamburgerButton = document.getElementById("hamburger");
-let navList = document.getElementById("nav-list");
-
-function toggleButton() {
-  navList.classList.toggle("show");
-}
-
-hamburgerButton.addEventListener("click", toggleButton);
+button.addEventListener("click", toggleClass);
