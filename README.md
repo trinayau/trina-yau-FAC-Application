@@ -106,3 +106,6 @@ The breaks I took were pretty long, I'm very new to coding and had to learn so m
 - Responsive, works on mobile
 - Engaging responses
 - Pretty and clean layout
+
+## Outcome
+Received offer, but had to withdraw from the programme due to personal circumstances. 
